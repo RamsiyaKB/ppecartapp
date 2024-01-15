@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "658476305074",
+    "project_id": "ppecartapp",
+    "storage_bucket": "ppecartapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658476305074:android:1ffd76afeee804e53b97ab",
+        "android_client_info": {
+          "package_name": "com.example.ppecartapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbGrCJy-QI5nz55EbBU1rs5k2gazqBYfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

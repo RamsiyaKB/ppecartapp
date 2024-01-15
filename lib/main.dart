@@ -3,8 +3,10 @@ import 'dart:async';
 
 
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ppecartapp/Login.dart';
 
 import 'homesc.dart';
 
@@ -12,8 +14,18 @@ import 'homesc.dart';
 
 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      apiKey: "AIzaSyBgswRrPP7tdyj9wH4FWf7bcjKi4gh6X94",
+      appId: "1:656850317677:android:ff3b2737b022c6e9b56a64",
+      messagingSenderId: "656850317677",
+      projectId: "loginpagee-a8210",
+    ),
+  );
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -43,7 +55,7 @@ class _splashhState extends State<splashh> {
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
                 (context) =>
-                HomeScreen()
+                LoginPage()
             )
         )
     );
